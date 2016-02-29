@@ -1,0 +1,223 @@
+/*! ^#User Dashboard *//*
+================================================== */
+
+.dashboardHeroSection {
+	width: 100%;
+	position: relative;
+	text-align: center;
+	padding: 64px 15px;
+	
+	.overlay {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 1;
+		background: rgba(87, 14, 14, .659);
+	}
+	
+	.centerMe {
+		position: relative;
+		z-index: 2;
+	}
+	
+	.title {
+		font-size: 28px;
+		line-height: 39px;
+		font-weight: 700;
+		font-family: $primary-font;
+		color: #fff;	
+	}
+}//dashboardHeroSection
+
+.dashSidebar {
+	.sidebarTitle {
+		font-family: $primary-font;
+		font-size: 24px;
+		line-height: 39px;
+		font-weight: 500;
+		color: $mainRed;
+		padding-top: 34px;
+		padding-bottom: 13px;
+		border-bottom: 3px solid $lightGrey;
+	}
+	.dashButton {
+		cursor: pointer;
+		display: block;
+		&.active {
+			display: none;
+		}
+	}
+	.sidebarLinks {
+		ul {
+			padding-top: 22px;
+			padding-left: 0px;
+			li {
+				list-style: none;
+				font-size: $secondary-font;
+				font-size: 18px;
+				line-height: 50px;
+				a {
+					color: $fontColor;
+				}
+			} /* li */
+		} /* ul */
+	} /* sidebarLinks */
+} /* dashSidebar */
+
+.centerDashWrap {
+	margin-top: 37px;
+	.dashView {
+		display: none;
+		&.open {
+			display: block;
+		}
+	}
+	.greyMessageWrap {
+		background-color: $lightGrey;
+		padding-left: 23px;
+		padding-right: 23px;
+		padding-top: 40px;
+		padding-bottom: 55px;
+		.messageTitle {
+			font-family: $primary-font;
+			font-size: 20px;
+			line-height: 39px;
+			font-weight: 500;
+			color: $darkRed;
+			padding-bottom: 14px;
+		}
+		.messageParagraph {
+			font-family: $secondary-font;
+			font-size: 18px;
+			line-height: 23px;
+			color: $fontColor;
+		}
+	}
+
+	.websiteTips {
+		margin-top: 43px;
+		.websiteTipsTitle {
+			font-family: $primary-font;
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 39px;
+			color: $mainRed;
+			padding-bottom: 26px;
+		}
+		.scmTabWrap {
+		
+			.labelBar {
+				.tipTitle {
+					color: white;
+					font-family: $primary-font;
+					font-size: 20px;
+					line-height: 29px;
+					font-weight: 500;
+					position: relative;
+					padding-left: 23px;
+					padding-right: 50px;
+				}
+				color: white;
+				background-color: $mainRed;
+				i { color: white; font-size: 24px; }
+				border: none;
+			}
+			
+			.scmDropWrapper { border: none; }
+			
+			.scmDropWrapper .scmTabButton {
+				font-family: $primary-font;
+				font-size: 20px;
+				font-weight: 500;
+				text-transform: none;
+				width: 100%;
+				border: 3px solid $mainRed;
+				border-top: 0px;
+				padding: 16px;
+				i { color: $red; font-size: 24px; }
+			}
+		} /*scmTabWrap*/
+	} /* websiteTips */
+	.scDeskTabContentWrap {
+		/*shorter margin for dashboard */
+		margin-bottom: 46px;
+	}
+} /* centerDashWrap */
+.heroImgWrap {
+	padding: 11px;
+	padding-bottom: 33px;
+	.littleDashHero {
+		height: 195px;
+		width: 100% !important;
+		.littleTitle {
+			margin-top: 80px;
+			text-align: center;
+			a {
+				font-family: $primary-font;
+				font-size: 20px;
+				font-weight: 500;
+				color: white;
+				padding-bottom: 25px; 
+			}
+		}
+		hr {
+			background-color: $mainRed;
+			border: none;
+			height: 4px;
+			width: 80%;
+			border-radius: 10px;
+		}
+	}
+}
+
+.secondHero {
+	margin-top: 25px;
+	margin-bottom: 33px;
+}
+
+	/*! ^#@Bootstrap sm *//*
+	    Tablet portrait and larger */
+	@media (min-width: 768px) {
+			
+		/*! -- ^#User Dashboard */
+
+			.centerDashWrap {
+				.greyMessageWrap {
+					margin-top: 5px;
+				}
+				.websiteTips {
+					margin-top: 68px;
+				}
+			}
+			.littleHeroes {
+				.heroImgWrap {
+					padding: 11px;
+					padding-bottom: 33px;
+					.littleDashHero {
+						height: 370px;
+						.littleTitle {
+							margin-top: 164px;
+							text-align: center;
+							a {
+								font-size: 30px;
+								padding-bottom: 35px; 
+							}
+							a:hover {
+								text-decoration: none;
+							}
+						}
+					}
+				}
+			}
+
+			.firstHero {
+				margin-right: 5px;
+			}
+
+			.secondHero {
+				margin-top: 0px;
+				margin-left: 5px;
+			}
+	}
